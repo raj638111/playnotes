@@ -1,0 +1,36 @@
+
+# Syntax
+  + Routes definition consists of,
+    1. HTTP Method
+      - e.g:  GET
+    2. URI Pattern
+      - e.g: /clients/:id  
+    3. Action Generator
+      - e.g: controllers.Clients.show(id: Long)
+        
+# Examples
+
+  + Basic
+    GET   /clients/:id          controllers.Clients.show(id: Long)
+    
+  + Comment
+    # Display a client.
+    GET   /clients/:id          controllers.Clients.show(id: Long)
+    
+  + *Specify different router
+    - Useful 
+      . when using SIRD routing
+      . When working on sub projects 
+    ->      /api                        api.MyRouter
+    
+  + Specify `modifiers`
+    . Specified using a preceding `+`
+    . The example below is used to bypass CSRF filter ???
+    
+    + nocsrf
+    POST  /api/new              controllers.Api.newThing
+      
+# Reference
+  - https://www.playframework.com/documentation/2.6.x/ScalaRouting#The-routes-file-syntax            
+      
+                        

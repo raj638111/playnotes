@@ -1,0 +1,12 @@
+
+# Embedded Routers
+  + Can be defined using Play provided DSL
+    - Called as 'String Interpolating Routing DSL'
+  + Is useful for,
+     - Embedding light weight play server ???:More
+     - Providing custom/advanced routing capabilities to regular Play application
+     - Mocking rest services for testing
+     
+# Reference
+  + https://www.playframework.com/documentation/2.6.x/ScalaRouting#Custom-routing     
+  

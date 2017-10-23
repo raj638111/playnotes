@@ -1,0 +1,48 @@
+
+# Launch play console
+
+  + sbt
+  
+  
+# Useful play console commands
+
+  + help run  
+    - Get help about a command
+  + run
+    - Runs the application in development mode
+    - Server will be launched with `auto-reload` feature (Code gets compiled(if necessary) for each request)
+  + compile
+  + test
+    - Run all the tests without running the server
+  + console
+    - Launches the Interactive (Believe REPL) scala console
+  + ~compile 
+    - Triggered Compilation
+  + ~run
+  + ~test
+  + ~testOnly <SomeClass>
+    - Trigger execution of this class everytime the source file is modified
+  + eclipse
+  + eclipse with-source=true
+    - Grab the available source jars
+    - https://www.playframework.com/documentation/2.6.x/IDE
+  + eclipse skip-parents=false
+    - Skip parents: What does it mean ?
+    - https://www.playframework.com/documentation/2.6.x/IDE  
+    
+# Useful SBT commands (Without entering play console)
+  + sbt run
+  + sbt ~run      
+    
+    
+# Debugging
+  
+  + `sbt -jvm-debug 9999`
+    - Starts JPDA debug port while launching the console    
+    
+    
+        
+# Reference
+  + https://www.playframework.com/documentation/2.6.x/PlayConsole
+    
+    

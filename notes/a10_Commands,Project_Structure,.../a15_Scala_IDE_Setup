@@ -1,0 +1,20 @@
+
+
+# SBT Plugins
+
+  + sbt eclipse
+    - addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "5.2.2")
+    - Always get the recent one
+    - Note: Compile the project before running `sbt eclipse`
+    - Enable force compilation (during `sbt eclipse`)
+      + EclipseKeys.preTasks := Seq(compile in Compile, compile in Test)
+    
+# Debug the application
+  + sbt -jvm-debug 9999 run
+    - More here: https://www.playframework.com/documentation/2.6.x/IDE#Generate-configuration
+    
+# Best practice
+  + Do not commit Eclipse configuration files
+    - https://www.playframework.com/documentation/2.6.x/IDE#Eclipse
+      
+  

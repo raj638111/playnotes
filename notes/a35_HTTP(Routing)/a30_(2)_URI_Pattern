@@ -1,0 +1,26 @@
+
+# Static Path
+  + Used to match the exact incoming request
+  + e.g
+    GET   /clients/all          controllers.Clients.list() 
+    
+# Dynamic Path (Exactly one **`URI path segment`(ie one /) using :)
+  + Example 
+    - Can be used to retieve a client by ID
+    GET   /clients/:id          controllers.Clients.show(id: Long)
+    
+# Dynamic Path spanning several `/`
+  + * also called Wild Card pattern
+  + Example
+    GET   /files/*name          controllers.Application.download(name)
+  + *** Note
+    - Dynamic parts spanning '/' are not decoded by router or encoded by reverse router. read more..???  
+    
+# Dynamic path with Custom regular expression
+  + Defined using $id<regex> syntax
+  + Example
+    GET   /items/$id<[0-9]+>    controllers.Items.show(id: Long)
+                
+      
+# Reference
+  + https://www.playframework.com/documentation/2.6.x/ScalaRouting#The-URI-pattern  

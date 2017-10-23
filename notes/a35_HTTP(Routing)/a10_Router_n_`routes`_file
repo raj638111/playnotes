@@ -1,0 +1,18 @@
+
+  # Router (Built-in HTTP router)
+    + Responsible for translating incoming HTTP request into `Action`
+    + Routes are specified in routes file
+      - ***`conf/routes`
+      - routes file is compiled (So we will get compilation error directly in browser)
+    + Event
+      - A HTTP request is considered as event by MVC framework
+      - ***Contains 2 pieces of information
+        . `Request path` & `Query string` (Example: /clients/1542)
+        . HTTP method (GET, POST, ...)
+        
+  # Reference
+    + https://www.playframework.com/documentation/2.6.x/ScalaRouting#The-built-in-HTTP-router
+    
+      
+    
+  

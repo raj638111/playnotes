@@ -1,0 +1,12 @@
+
+# Following are the HTTP methods that can be specifid in routes file
+  - GET
+  - POST
+  - PATCH
+  - PUT
+  - DELETE
+  - HEAD
+
+# Reference
+  + https://www.playframework.com/documentation/2.6.x/ScalaRouting#The-HTTP-method
+  

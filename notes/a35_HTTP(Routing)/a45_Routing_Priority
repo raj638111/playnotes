@@ -1,0 +1,9 @@
+
+
+  # General
+    + When many routes match the same request, the first route in declaration order
+      will be used
+  # Reference
+    + https://www.playframework.com/documentation/2.6.x/ScalaRouting#Routing-priority
+    
+    

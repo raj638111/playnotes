@@ -1,0 +1,42 @@
+
+# General
+  + Can be used to generate a URL from within Scala call
+  + Can be used for,
+    - Redirection
+    - Code refactoring ..how???
+  + Routing
+    - Request(URL) -> Method
+  + Reverse Routing
+    - Method -> URL
+    
+# Reverse Controller
+  + For each Controller in routes file, the router generates a Reverse controller
+  + Has the same action method, but returns 'Call' instead of 'Action'
+  + Is generated in 'routes' package (controllers.routes....)
+  + *** Note
+    - Read more on value encoding...???
+  
+# Example
+  package controllers
+  import javax.inject.Inject
+  import play.api._
+  import play.api.mvc._
+  
+  class Application @Inject()(cc:ControllerComponents) extends AbstractController(cc)  {
+  
+    def hello(name: String) = Action {
+      Ok("Hello " + name + "!")
+    }
+  
+  }    
+        
+  # Hello action
+  GET   /hello/:name          controllers.Application.hello(name)
+  
+  // Redirect to /hello/Bob
+  def helloBob = Action {
+    Redirect(routes.Application.hello("Bob"))
+  }          
+
+# Reference
+  + https://www.playframework.com/documentation/2.6.x/ScalaRouting#Reverse-routing  

@@ -1,0 +1,8 @@
+
+  # Config file
+    + Is defined in `conf/application.conf
+    + Default settings are loaded from `reference.conf 
+      - # https://www.playframework.com/documentation/2.6.x/ConfigFile#Configuration-file-syntax-and-features
+    + 
+  # More info
+    + Play uses Typesafe config library 

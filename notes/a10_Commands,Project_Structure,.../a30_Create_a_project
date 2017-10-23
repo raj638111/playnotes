@@ -1,0 +1,15 @@
+
+# Using Starter Project
+
+  + ...
+
+# using  `giter8` template(Seed) in SBT
+  + `sbt new playframework/play-scala-seed.g8
+  + https://www.playframework.com/documentation/2.6.x/Tutorials#Play-Seeds
+
+
+# Reference
+
+  + https://www.playframework.com/documentation/2.6.x/NewApplication
+  + https://www.playframework.com/documentation/2.6.x/Tutorials
+  

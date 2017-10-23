@@ -1,0 +1,32 @@
+
+  # `app
+    + `controllers
+    + `models
+    + `views
+    + https://www.playframework.com/documentation/2.6.x/Anatomy#The-app/-directory
+    
+  # `public
+    + For static assets
+    
+  # `conf
+    + `application.conf
+      - Contains confiration parameters
+    + `routes
+      - Routes definition file
+      
+  # `lib
+    + Unmanaged library dependencies
+    
+  # `project
+    + `plugins.sbt
+    + `build.properties
+      - Contains SBT version to be used with the project
+      
+  # `target
+    + https://www.playframework.com/documentation/2.6.x/Anatomy#The-target/-directory                            
+        
+
+  # Reference
+    + https://www.playframework.com/documentation/2.6.x/Anatomy
+  
+    

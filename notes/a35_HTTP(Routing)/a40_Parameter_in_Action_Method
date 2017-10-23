@@ -1,0 +1,28 @@
+
+# Parameter Type
+  + String
+    - Typing the parameter is optional for parameters of type String
+    GET   /clients/:id          controllers.Clients.show() ... is this right???
+    
+  + Other types
+    - For other parameter types, the parameter need to be explicitly specified
+    GET   /clients/:id          controllers.Clients.show(id: Long)
+    
+# Parameter with Fixed Value
+          
+  # Extract the page parameter from the path, or fix the value for /
+  GET   /                     controllers.Application.show(page = "home")
+  GET   /:page                controllers.Application.show(page)    
+  
+# Parameter with default values
+
+  # Pagination links, like /clients?page=3
+  GET   /clients              controllers.Clients.list(page: Int ?= 1)  
+    
+# Optional Parameters
+
+  # The version parameter is optional. E.g. /api/list-all?version=3.0
+  GET   /api/list-all         controllers.Api.list(version: Option[String])   
+  
+# Reference
+  + https://www.playframework.com/documentation/2.6.x/ScalaRouting#Call-to-the-Action-generator-method   
